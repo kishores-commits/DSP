@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Structures with Python — Course Hub</title>
-<meta name="description" content="Lecture notes and lab practicals for Data Structures with Python.">
+<title>Data Structures using Python — Course Hub</title>
+<meta name="description" content="Single-page course website for Data Structures using Python (BCA300, MJC).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -13,25 +13,57 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html">list<span class="dot">.</span>head</a>
+    <a class="brand" href="#home">list<span class="dot">.</span>head</a>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="notes.html">Lecture Notes</a>
-      <a href="practicals.html">Practicals</a>
+      <a href="#home">Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#notes">Lecture Notes</a>
+      <a href="#practicals">Practicals</a>
+      <a href="#resources">Resources</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
   <div class="wrap">
-    <p class="eyebrow">// Data Structures &amp; Algorithms — Python</p>
-    <h1 class="hero-title">Every good structure<br>starts at <span class="accent">HEAD</span>.</h1>
+    <p class="eyebrow">// BCA300 · MJC · Data Structures using Python</p>
+    <h1 class="hero-title">Learn structures.<br>Build them with <span class="accent">Python</span>.</h1>
     <p class="hero-sub">
-      Lecture notes and lab practicals for the Data Structures course, built the way
-      the course teaches its very first structure — as a chain of nodes, each one
-      pointing to the next. Course code lives in this repo; open it in VS&nbsp;Code
-      to write and test each practical.
+      This single-page course hub brings together the course overview, unit-wise lecture
+      notes, practicals, and references for Data Structures using Python. Everything you
+      need for the semester is organized into one clean, attractive study page.
     </p>
+
+    <div class="course-stats">
+      <div class="stat-card">
+        <span class="stat-label">Course Title</span>
+        <strong>Data Structures using Python</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Course Code</span>
+        <strong>BCA300</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Course Type</span>
+        <strong>MJC</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Teaching Hours / Week</span>
+        <strong>3-0-2-0</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Credits</span>
+        <strong>04</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Teaching Hours</span>
+        <strong>45-0-15</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Assessment</span>
+        <strong>CIE + SEE: 50 + 50</strong>
+      </div>
+    </div>
 
     <div class="hero-diagram">
       <div class="chain">
@@ -48,23 +80,23 @@
     </div>
 
     <div class="cta-row">
-      <a class="btn btn-primary" href="practicals.html">Open practicals →</a>
-      <a class="btn btn-secondary" href="notes.html">Browse lecture notes</a>
+      <a class="btn btn-primary" href="#practicals">Open practicals →</a>
+      <a class="btn btn-secondary" href="#notes">Browse lecture notes</a>
     </div>
   </div>
 </section>
 
-<section class="block reveal">
+<section class="block reveal" id="overview">
   <div class="wrap">
     <div class="section-head">
       <h2 class="section-title"><span class="idx">01</span> About this course</h2>
       <span class="section-note">45 lecture hours · 30 practical hours</span>
     </div>
-    <p style="color:var(--muted); max-width:720px; font-size:15px;">
-      This course builds data structures from first principles in Python — starting
-      with arrays and linked lists, moving through stacks, queues, and trees, and
-      finishing with graphs, searching, and sorting. Each unit pairs its theory with
-      hands-on practicals so every structure gets implemented, not just described.
+    <p class="lead-copy">
+      This course introduces data structures from the ground up using Python. Students progress
+      from arrays and linked lists to stacks, queues, trees, and finally graphs, searching, and
+      sorting. Each topic is paired with a practical implementation so the theory stays grounded
+      in actual coding practice.
     </p>
   </div>
 </section>
@@ -78,48 +110,195 @@
       <div class="unit-card">
         <div class="unit-meta"><span>UNIT I</span><span class="unit-hours">18 hrs</span></div>
         <h3>Linear Structures</h3>
-        <p>Algorithm design paradigms, built-in Python structures, arrays, singly
-          and doubly linked lists, circular lists.</p>
-        <a class="unit-link" href="notes.html#unit1">View topics →</a>
+        <p>Algorithm design paradigms, built-in Python structures, arrays, singly and doubly linked lists, and circular lists.</p>
+        <a class="unit-link" href="#unit1">View topics →</a>
       </div>
       <div class="unit-card">
         <div class="unit-meta"><span>UNIT II</span><span class="unit-hours">18 hrs</span></div>
         <h3>Stacks, Queues &amp; Trees</h3>
-        <p>Push/pop, bracket matching, expression evaluation, queue variants, binary
-          search trees, and all three depth-first traversals.</p>
-        <a class="unit-link" href="notes.html#unit2">View topics →</a>
+        <p>Push/pop, bracket matching, expression evaluation, queue variants, binary search trees, and depth-first traversals.</p>
+        <a class="unit-link" href="#unit2">View topics →</a>
       </div>
       <div class="unit-card">
         <div class="unit-meta"><span>UNIT III</span><span class="unit-hours">9 hrs</span></div>
         <h3>Graphs, Searching &amp; Sorting</h3>
-        <p>Graph representations and traversal, linear and binary search, and the
-          core sorting algorithms through heap sort.</p>
-        <a class="unit-link" href="notes.html#unit3">View topics →</a>
+        <p>Graph representations and traversal, linear and binary search, and the core sorting algorithms.</p>
+        <a class="unit-link" href="#unit3">View topics →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block reveal">
+<section class="block reveal" id="notes">
   <div class="wrap">
     <div class="section-head">
-      <h2 class="section-title"><span class="idx">03</span> Set up in VS Code</h2>
+      <h2 class="section-title"><span class="idx">03</span> Lecture notes</h2>
+      <span class="section-note">Syllabus checkpoints</span>
     </div>
-    <div class="callout">
-      Clone this repository, open it in VS Code, and write each practical inside its
-      matching file under <code>code/</code> — for example <code>code/prac05_stack.py</code>.
-      Every file already has the function signatures and a short docstring from the
-      lab sheet, so you only need to fill in the logic. Commit and push, and this
-      page (served from the <code>main</code> branch via GitHub Pages) will link
-      straight to whatever you've written.
+
+    <div class="topic-block" id="unit1">
+      <h3>Unit I · Structures</h3>
+      <details class="topic-set" open>
+        <summary>Foundations</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Algorithm design paradigms</li>
+            <li>Linear vs. non-linear data structures</li>
+            <li>Python built-ins: lists, tuples, dictionaries, sets</li>
+            <li>Comprehensions and strings</li>
+          </ul>
+        </div>
+      </details>
+      <details class="topic-set">
+        <summary>Arrays</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Operations, applications, and limitations</li>
+            <li>Lists and pointer-based structures</li>
+          </ul>
+        </div>
+      </details>
+      <details class="topic-set">
+        <summary>Singly linked list</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Node structure</li>
+            <li>Append, size, traversal, delete, search, clear</li>
+          </ul>
+        </div>
+      </details>
+      <details class="topic-set">
+        <summary>Doubly &amp; circular linked lists</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Doubly linked structure and operations</li>
+            <li>Circular list traversal and deletion</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="topic-block" id="unit2">
+      <h3>Unit II · Stacks, Queues &amp; Trees</h3>
+      <details class="topic-set" open>
+        <summary>Stacks</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Push, pop, peek</li>
+            <li>Bracket matching and expression evaluation</li>
+          </ul>
+        </div>
+      </details>
+      <details class="topic-set">
+        <summary>Queues</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Queue design</li>
+            <li>Enqueue and dequeue operations</li>
+            <li>Real-world queue use cases</li>
+          </ul>
+        </div>
+      </details>
+      <details class="topic-set">
+        <summary>Trees</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Binary trees and BST operations</li>
+            <li>Inorder, preorder, postorder traversals</li>
+            <li>Expression trees and balancing</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="topic-block" id="unit3">
+      <h3>Unit III · Graphs, Searching &amp; Sorting</h3>
+      <details class="topic-set" open>
+        <summary>Graphs</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Directed, undirected, weighted graphs</li>
+            <li>Adjacency list vs. adjacency matrix</li>
+            <li>DFS and BFS traversal</li>
+          </ul>
+        </div>
+      </details>
+      <details class="topic-set">
+        <summary>Searching</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Linear search</li>
+            <li>Binary search</li>
+          </ul>
+        </div>
+      </details>
+      <details class="topic-set">
+        <summary>Sorting</summary>
+        <div class="topic-body">
+          <ul>
+            <li>Bubble, insertion, selection, quick, heap sort</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="practicals">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title"><span class="idx">04</span> Practical list</h2>
+      <span class="section-note">15 practicals · 30 hours</span>
+    </div>
+    <div class="prac-list">
+      <div class="prac-node"><div class="prac-index">01<span class="arrow">→</span></div><div class="prac-body"><h3>Recursion in Python</h3><p>Classic base case / recursive case example.</p><div class="prac-actions"><a class="code-pill" href="code/prac01_recursion.py">prac01_recursion.py</a><span class="path-tag">Unit I</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">02<span class="arrow">→</span></div><div class="prac-body"><h3>Singly Linked List</h3><p>Append, delete, search, and size operations.</p><div class="prac-actions"><a class="code-pill" href="code/prac02_singly_linked_list.py">prac02_singly_linked_list.py</a><span class="path-tag">Unit I</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">03<span class="arrow">→</span></div><div class="prac-body"><h3>Doubly Linked List</h3><p>Forward and backward links with append/delete/search.</p><div class="prac-actions"><a class="code-pill" href="code/prac03_doubly_linked_list.py">prac03_doubly_linked_list.py</a><span class="path-tag">Unit I</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">04<span class="arrow">→</span></div><div class="prac-body"><h3>Circular Linked List</h3><p>Append, delete, and iteration over a circular structure.</p><div class="prac-actions"><a class="code-pill" href="code/prac04_circular_linked_list.py">prac04_circular_linked_list.py</a><span class="path-tag">Unit I</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">05<span class="arrow">→</span></div><div class="prac-body"><h3>Stack — Push, Pop, Peek</h3><p>Classic stack operations.</p><div class="prac-actions"><a class="code-pill" href="code/prac05_stack.py">prac05_stack.py</a><span class="path-tag">Unit II</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">06<span class="arrow">→</span></div><div class="prac-body"><h3>Bracket Matching</h3><p>Balanced parenthesis checker using a stack.</p><div class="prac-actions"><a class="code-pill" href="code/prac06_bracket_matching.py">prac06_bracket_matching.py</a><span class="path-tag">Unit II</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">07<span class="arrow">→</span></div><div class="prac-body"><h3>Queue — Enqueue, Dequeue</h3><p>List-based queue implementation.</p><div class="prac-actions"><a class="code-pill" href="code/prac07_queue.py">prac07_queue.py</a><span class="path-tag">Unit II</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">08<span class="arrow">→</span></div><div class="prac-body"><h3>Expression Evaluation</h3><p>Stack-based postfix or infix evaluation.</p><div class="prac-actions"><a class="code-pill" href="code/prac08_expression_evaluation.py">prac08_expression_evaluation.py</a><span class="path-tag">Unit II</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">09<span class="arrow">→</span></div><div class="prac-body"><h3>Binary Search Tree Operations</h3><p>Insertion, deletion, traversal, and search.</p><div class="prac-actions"><a class="code-pill" href="code/prac09_bst_operations.py">prac09_bst_operations.py</a><span class="path-tag">Unit II</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">10<span class="arrow">→</span></div><div class="prac-body"><h3>Merge Sort</h3><p>Divide-and-conquer sorting implementation.</p><div class="prac-actions"><a class="code-pill" href="code/prac10_merge_sort.py">prac10_merge_sort.py</a><span class="path-tag">Unit III</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">11<span class="arrow">→</span></div><div class="prac-body"><h3>Quick Sort</h3><p>Pivot-based partitioning implementation.</p><div class="prac-actions"><a class="code-pill" href="code/prac11_quick_sort.py">prac11_quick_sort.py</a><span class="path-tag">Unit III</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">12<span class="arrow">→</span></div><div class="prac-body"><h3>Bubble Sort</h3><p>Adjacent comparison and swap algorithm.</p><div class="prac-actions"><a class="code-pill" href="code/prac12_bubble_sort.py">prac12_bubble_sort.py</a><span class="path-tag">Unit III</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">13<span class="arrow">→</span></div><div class="prac-body"><h3>Selection Sort</h3><p>Select the minimum repeatedly.</p><div class="prac-actions"><a class="code-pill" href="code/prac13_selection_sort.py">prac13_selection_sort.py</a><span class="path-tag">Unit III</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">14<span class="arrow">→</span></div><div class="prac-body"><h3>Insertion Sort</h3><p>Grow a sorted prefix.</p><div class="prac-actions"><a class="code-pill" href="code/prac14_insertion_sort.py">prac14_insertion_sort.py</a><span class="path-tag">Unit III</span></div></div></div>
+      <div class="prac-node"><div class="prac-index">15<span class="arrow">→</span></div><div class="prac-body"><h3>Binary Search</h3><p>Sorted-array search on a practical example.</p><div class="prac-actions"><a class="code-pill" href="code/prac15_binary_search.py">prac15_binary_search.py</a><span class="path-tag">Unit III</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="resources">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title"><span class="idx">05</span> References</h2>
+    </div>
+    <div class="units-grid">
+      <div class="unit-card">
+        <div class="unit-meta"><span>TEXTBOOK</span></div>
+        <h3>Python Data Structures and Algorithms</h3>
+        <p>Benjamin Baka</p>
+      </div>
+      <div class="unit-card">
+        <div class="unit-meta"><span>REFERENCE</span></div>
+        <h3>Problem Solving with Algorithms and Data Structures Using Python</h3>
+        <p>Bradley N. Miller &amp; David L. Ranum</p>
+      </div>
+      <div class="unit-card">
+        <div class="unit-meta"><span>REFERENCE</span></div>
+        <h3>Data Structures and Algorithms in Python</h3>
+        <p>Michael T. Goodrich, Roberto Tamassia &amp; Michael H. Goldwasser</p>
+      </div>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>Data Structures with Python · BCA</span>
-    <span>Textbook: <em>Python Data Structures and Algorithms</em>, Benjamin Baka</span>
+    <span>Data Structures using Python · BCA300 · MJC</span>
+    <span>CIE + SEE: 50 + 50</span>
   </div>
 </footer>
 
