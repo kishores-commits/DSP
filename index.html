@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Structures with Python — Course Hub</title>
+<meta name="description" content="Lecture notes and lab practicals for Data Structures with Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">list<span class="dot">.</span>head</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="notes.html">Lecture Notes</a>
+      <a href="practicals.html">Practicals</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">// Data Structures &amp; Algorithms — Python</p>
+    <h1 class="hero-title">Every good structure<br>starts at <span class="accent">HEAD</span>.</h1>
+    <p class="hero-sub">
+      Lecture notes and lab practicals for the Data Structures course, built the way
+      the course teaches its very first structure — as a chain of nodes, each one
+      pointing to the next. Course code lives in this repo; open it in VS&nbsp;Code
+      to write and test each practical.
+    </p>
+
+    <div class="hero-diagram">
+      <div class="chain">
+        <div class="chain-node"><div class="node-box is-head">HEAD</div></div>
+        <div class="pointer">→</div>
+        <div class="chain-node"><div class="node-box is-active">Unit I · Structures</div></div>
+        <div class="pointer">→</div>
+        <div class="chain-node"><div class="node-box">Unit II · Stacks, Queues, Trees</div></div>
+        <div class="pointer">→</div>
+        <div class="chain-node"><div class="node-box">Unit III · Graphs &amp; Sorting</div></div>
+        <div class="pointer">→</div>
+        <div class="chain-node"><div class="node-box is-null">NULL</div></div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="practicals.html">Open practicals →</a>
+      <a class="btn btn-secondary" href="notes.html">Browse lecture notes</a>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title"><span class="idx">01</span> About this course</h2>
+      <span class="section-note">45 lecture hours · 30 practical hours</span>
+    </div>
+    <p style="color:var(--muted); max-width:720px; font-size:15px;">
+      This course builds data structures from first principles in Python — starting
+      with arrays and linked lists, moving through stacks, queues, and trees, and
+      finishing with graphs, searching, and sorting. Each unit pairs its theory with
+      hands-on practicals so every structure gets implemented, not just described.
+    </p>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title"><span class="idx">02</span> Units at a glance</h2>
+    </div>
+    <div class="units-grid">
+      <div class="unit-card">
+        <div class="unit-meta"><span>UNIT I</span><span class="unit-hours">18 hrs</span></div>
+        <h3>Linear Structures</h3>
+        <p>Algorithm design paradigms, built-in Python structures, arrays, singly
+          and doubly linked lists, circular lists.</p>
+        <a class="unit-link" href="notes.html#unit1">View topics →</a>
+      </div>
+      <div class="unit-card">
+        <div class="unit-meta"><span>UNIT II</span><span class="unit-hours">18 hrs</span></div>
+        <h3>Stacks, Queues &amp; Trees</h3>
+        <p>Push/pop, bracket matching, expression evaluation, queue variants, binary
+          search trees, and all three depth-first traversals.</p>
+        <a class="unit-link" href="notes.html#unit2">View topics →</a>
+      </div>
+      <div class="unit-card">
+        <div class="unit-meta"><span>UNIT III</span><span class="unit-hours">9 hrs</span></div>
+        <h3>Graphs, Searching &amp; Sorting</h3>
+        <p>Graph representations and traversal, linear and binary search, and the
+          core sorting algorithms through heap sort.</p>
+        <a class="unit-link" href="notes.html#unit3">View topics →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title"><span class="idx">03</span> Set up in VS Code</h2>
+    </div>
+    <div class="callout">
+      Clone this repository, open it in VS Code, and write each practical inside its
+      matching file under <code>code/</code> — for example <code>code/prac05_stack.py</code>.
+      Every file already has the function signatures and a short docstring from the
+      lab sheet, so you only need to fill in the logic. Commit and push, and this
+      page (served from the <code>main</code> branch via GitHub Pages) will link
+      straight to whatever you've written.
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Data Structures with Python · BCA</span>
+    <span>Textbook: <em>Python Data Structures and Algorithms</em>, Benjamin Baka</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
